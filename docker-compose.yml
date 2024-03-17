@@ -57,7 +57,7 @@ services:
       - ./redis/redis-persistence:/bitnami
 
   weaviate:
-    image: semitechnologies/weaviate:1.21.5
+    image: cr.weaviate.io/semitechnologies/weaviate:1.21.5
     container_name: weaviate
     env_file:
       - weaviate/.env
